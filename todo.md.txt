@@ -1,0 +1,3 @@
+1.)change to using groq api and gemini 
+2.) work from terminal 
+3.)https://app.codecrafters.io/roadmap/challenge-extensions?course=claude-code
