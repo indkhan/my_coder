@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.marktechpost.com)",
+      "WebFetch(domain:dev.to)",
+      "WebFetch(domain:www.flowhunt.io)",
+      "Bash(python -c \"\nimport ast, pathlib, sys\nerrors = []\nfor f in pathlib.Path\\('backend'\\).rglob\\('*.py'\\):\n    try:\n        ast.parse\\(f.read_text\\(\\)\\)\n    except SyntaxError as e:\n        errors.append\\(f'{f}: {e}'\\)\nif errors:\n    for e in errors: print\\(e\\)\n    sys.exit\\(1\\)\nprint\\('All Python files parse OK'\\)\n\")",
+      "Bash(python -c \"ast.parse\\(open\\('main.py'\\).read\\(\\)\\)\" 2>&1 || python -c \"import ast; ast.parse\\(open\\('main.py'\\).read\\(\\)\\); print\\('main.py OK'\\)\")",
+      "Bash(pip install:*)"
+    ]
+  }
+}
